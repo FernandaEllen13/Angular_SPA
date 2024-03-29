@@ -1,0 +1,40 @@
+<h1>Tabela de Filmes</h1>
+<table>
+  <thead>
+    <tr>
+      <td>ID</td>
+      <td>Title</td>
+      <td>Category</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Cisne Negro</td>
+      <td>Suspense</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Titanic</td>
+      <td>Romance</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Avatar</td>
+      <td>Ação</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Vingadores</td>
+      <td>Ação</td>
+    </tr>
+    <ng-container *ngFor="let m of movies">
+      <tr>
+        <td> {{m.id}} </td>
+        <td> {{m.title}} </td>
+        <td> {{m.category}} </td>
+      </tr>
+    </ng-container>
+  </tbody>
+
+</table>
